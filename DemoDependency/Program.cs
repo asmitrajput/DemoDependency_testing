@@ -26,7 +26,8 @@ builder.Services.AddDbContext<StudentDbContext>(option=>option.UseSqlServer( bui
 builder.Services.AddScoped<IStudentRepo, StudentService>();
 var app = builder.Build();
 app.UseMiddleware<LoggingMiddleware>();
-// inside code changes in  feature branch 
+// merge feture branch with main branch(master)
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment()) 
 {
