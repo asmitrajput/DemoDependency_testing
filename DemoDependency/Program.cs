@@ -25,7 +25,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<StudentDbContext>(option=>option.UseSqlServer( builder.Configuration.GetConnectionString("Democonnection")));
 builder.Services.AddScoped<IStudentRepo, StudentService>();
 var app = builder.Build();
-app.UseMiddleware<LoggingMiddleware>();
+app.UseMiddleware<LoggingMiddleware>(); 
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment()) 
