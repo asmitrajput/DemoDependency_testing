@@ -1,0 +1,19 @@
+private readonly StudentDbContext _studentDbContext;
+
+This creates a variable inside the class.
+
+private → only this class can use it
+
+readonly → value cannot be changed after constructor runs
+
+_studentDbContext → will store the DbContext instance
+
+
+
+
+
+
+In .NET Core, middleware is a component in the request pipeline.
+Every incoming request passes through multiple middleware components one by one before reaching the controller.
+Each middleware can do some work like logging, authentication, or error handling, and then it decides whether to pass the request to the next middleware or stop it.
+The response also passes back through the same middleware in reverse order.
